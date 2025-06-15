@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Enrollment System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="./Assets/Images/CvSU.png" alt="School Logo">
+                <span class="logo-text">CvSU</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#enroll" class="nav-link">Enroll Now</a></li>
+            </ul>
+            <button class="hamburger-menu" aria-label="Toggle mobile menu" onclick="toggleMobileMenu()" onkeydown="handleHamburgerKeyPress(event)">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <main class="hero-section" id="home">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>ENROLL<br>NOW!</h1>
+                <p>Welcome to our enrollment system! Choose your applicant type to get started with your academic journey.</p>
+                
+                <div class="hero-cta">
+                    <button class="btn btn-primary btn-large" onclick="window.location.href='#enroll'">
+                        Get Started
+                    </button>
+                </div>
+            </div>
+            <div class="hero-illustration">
+                <div class="student-desk-container">
+                    <div class="student-character">
+                        <div class="student-head"></div>
+                        <div class="student-body"></div>
+                    </div>
+                    <div class="desk"></div>
+                    <div class="laptop"></div>
+                    <div class="plant"></div>
+                </div>
+            </div>
+        </div>
+        <div class="floating-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+            <div class="shape shape-4"></div>
+            <div class="shape shape-5"></div>
+        </div>
+    </main>
+    <!-- End Hero Section -->
+
+    <!-- About Us Section -->
+    <section id="about" class="about-section">
+        <div class="about-container">
+            <div class="about-header">
+                <h2 class="section-title">About Cavite State University</h2>
+                <p class="section-subtitle">Premier University in Historic Cavite</p>
+            </div>
+            <div class="about-content modern-mission-vision">
+                <div class="about-mission-vision-cards">
+                    <div class="mission-vision-card">
+                        <h3 class="mission-vision-title">Our Vision</h3>
+                        <p class="mission-vision-text">The premier university in historic Cavite globally recognized for excellence in character development, academics, research, innovation and sustainable community engagement.</p>
+                    </div>
+                    <div class="mission-vision-card">
+                        <h3 class="mission-vision-title">Our Mission</h3>
+                        <p class="mission-vision-text">Cavite State University shall provide excellent, equitable and relevant educational opportunities in the arts, sciences and technology through quality instruction and responsive research and development activities. It shall produce professional, skilled and morally upright individuals for global competitiveness.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enrollment Section moved below About Us -->
+    <main class="enrollment-page">
+        <div class="enrollment-container">
+            <div class="enrollment-header">
+                <h1>ENROLL NOW!</h1>
+                <p>Choose your enrollment type to get started with your academic journey</p>
+            </div>
+            <div class="enrollment-cards-container" id="enroll">
+                <div class="enrollment-card">
+                    <div class="card-illustration">
+                        <div class="new-student-scene">
+                            <div class="study-table">
+                                <div class="table-surface"></div>
+                                <div class="student-figure student-1">
+                                    <div class="head"></div>
+                                    <div class="body"></div>
+                                </div>
+                                <div class="student-figure student-2">
+                                    <div class="head"></div>
+                                    <div class="body"></div>
+                                </div>
+                                <div class="books"></div>
+                                <div class="pencils"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <button class="card-btn btn-new" onclick="redirectToForm('new')">New</button>
+                    </div>
+                </div>
+                <div class="enrollment-card">
+                    <div class="card-illustration">
+                        <div class="old-student-scene">
+                            <div class="reception-desk">
+                                <div class="desk-surface"></div>
+                                <div class="receptionist">
+                                    <div class="head"></div>
+                                    <div class="body"></div>
+                                </div>
+                                <div class="returning-student">
+                                    <div class="head"></div>
+                                    <div class="body"></div>
+                                </div>
+                                <div class="computer"></div>
+                                <div class="papers"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <button class="card-btn btn-returning" onclick="redirectToForm('old')">Old</button>
+                    </div>
+                </div>
+                <div class="enrollment-card">
+                    <div class="card-illustration">
+                        <div class="transfer-student-scene">
+                            <div class="transfer-scene">
+                                <div class="transfer-student">
+                                    <div class="head"></div>
+                                    <div class="body"></div>
+                                </div>
+                                <div class="helper">
+                                    <div class="head"></div>
+                                    <div class="body"></div>
+                                </div>
+                                <div class="moving-boxes"></div>
+                                <div class="floor"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <button class="card-btn btn-transfer" onclick="redirectToForm('transferee')">Transferee</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- End Enrollment Section -->
+
+    <script src="script.js"></script>
+</body>
+</html>

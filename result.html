@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Complete</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgZmlsbD0ibm9uZSIgeG1zbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjYwIiBoZWlnaHQ9IjYwIiByeD0iMTAiIGZpbGw9IiM0Njc0NEEiLz4KPHN2ZyB4PSIxNSIgeT0iMTUiIHdpZHRoPSIzMCIgaGVpZ2h0PSIzMCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIj4KPHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1zbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEyIDJMMTMuMDkgOC4yNkwyMCA9TDEzLjA5IDE1Ljc0TDEyIDIyTDEwLjkxIDE1Ljc0TDQgOUwxMC45MSA4LjI2TDEyIDJaIiBmaWxsPSIjRkZENzAwIi8+CjwvcGF0aD4KPC9zdmc+Cjwvc3ZnPgo8L3N2Zz4K" alt="School Logo">
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html#home" class="nav-link">Home</a></li>
+                <li><a href="index.html#about" class="nav-link">About</a></li>
+                <li><a href="enrollment.html#enroll" class="nav-link">Enroll Now</a></li>
+            </ul>
+            <button class="hamburger-menu" aria-label="Toggle mobile menu" onclick="toggleMobileMenu()" onkeydown="handleHamburgerKeyPress(event)">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <div class="result-container">
+        <div class="result-card">
+            <div class="success-icon">✓</div>
+            <h1 class="result-title">Registration Successful!</h1>
+            <p>Thank you for your enrollment. Below is a summary of your submitted information:</p>
+            
+            <h2 id="studentType" class="form-subtitle result-student-type-title">Student</h2>
+            
+            <div class="student-info">
+                <div id="studentInfo">
+                    <!-- Student information will be dynamically populated here -->
+                </div>
+            </div>
+            
+            <div class="result-buttons-container">
+                <button class="back-btn result-print-button" onclick="window.print()">
+                    Print Information
+                </button>
+            </div>
+            
+            <p class="result-footer-note">
+                Please save or print this information for your records. You will receive further instructions via email.
+            </p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
